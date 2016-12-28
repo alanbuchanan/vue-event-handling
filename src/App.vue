@@ -1,10 +1,10 @@
 <template>
   <div>
     <button @mouseenter="counter += 1">Increment the count!</button>
-    <button @click="increment()">Increment using a method!</button>
+    <button @click="increment">Increment using a method!</button>
     <div v-text="counter"></div>
-    <form @submit.prevent="logName()">
-      <input @keyup.ctrl.alt.shift.down="keyHandler()" v-model="firstName" placeholder="First name..." />
+    <form @submit.prevent="logName">
+      <input @keyup.ctrl.alt.shift.down="keyHandler" v-model="firstName" placeholder="First name..." />
     </form>
   </div>
 </template>
