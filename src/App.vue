@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @mouseenter="counter += 1">Increment the count!</button>
+    <button @mouseenter="counter += 1">Increment the counter!</button>
     <button @click="increment">Increment using a method!</button>
     <div v-text="counter"></div>
     <form @submit.prevent="logName">
